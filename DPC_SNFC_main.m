@@ -21,7 +21,7 @@ gama = 3;
 % A=normalize(A);
 n = size(A,1);                             
 dist = CaculateDist(A);                     
-[knn,rnn] = neighbors(A,lemda);         
+[knn,rnn] = neighbors(X,lemda);         
 rho = calculateRho(dist,knn);            
 [father] = FindSuperiorNode(rnn,dist,rho);     
 
